@@ -16,31 +16,31 @@
 
 ### Cách dùng Git:
 ```markdown
-1. git init
+git init
 ```
 ```markdown
-2. git add .
+git add .
 ```
 ```markdown
-3. git commit -m "comment"
+git commit -m "comment"
 ```
 ```markdown
-4. git branch
+git branch
 ```
 ```markdown
-5. git checkout
+git checkout
 ```
 ```markdown
-6. git remote add origin https://github.com/BuiQuangVinh66/Learn-The-Basics-Of-Front-End.git
+git remote add origin https://github.com/BuiQuangVinh66/Learn-The-Basics-Of-Front-End.git
 ```
 ```markdown
-7. git push origin master
+git push origin master
 ```
 ```markdown
-8. git pull origin master
+git pull origin master
 ```
 ```markdown
-9. git clone
+git clone
 ```
 
 ---
@@ -89,5 +89,3 @@
         <td>Chứa nội dung của trang web ví dụ: hình ảnh, văn bản,...</td>
     </tr>
 </table>
-
----
