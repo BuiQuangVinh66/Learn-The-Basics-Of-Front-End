@@ -13,8 +13,12 @@
     2. Page Ruler Redux
     3. Viewport Resizer
 
-`Cách dùng Git:`<br>
+```markdown
+Cách dùng Git:
+```
+```markdown
     1. git init
+```
     2. git add .
     3. git commit -m "comment"
     4. git branch
