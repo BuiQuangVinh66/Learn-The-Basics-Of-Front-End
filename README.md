@@ -1,12 +1,30 @@
 # Download the necessary things
 1. Để làm việc với Git cần phải tải Git [tại đây 👈🏻](https://git-scm.com/downloads)
 
-2. Extension:
+2. Extensions Visual Studio Code:
     1. Live Server
     2. Live Previews
     3. HTML to CSS autocompletion
     4. Prettier - Code formatter
-    5. Auto Rename Tag
+    5. Auto Rename Tag 
+
+3. Extensions Chrome:
+    1. ColorZilla
+    2. Page Ruler Redux
+    3. Viewport Resizer
+
+```markdown
+#Cách dùng Git:
+    1. git init
+    2. git add .
+    3. git commit -m "comment"
+    4. git branch
+    5. git checkout
+    6. git remote add origin https://github.com/BuiQuangVinh66/Learn-The-Basics-Of-Front-End.git
+    7. git push origin master
+    8. git pull origin master
+    9. git clone
+```
 ---
 
 # Learn-The-Basics-Of-Front-End
