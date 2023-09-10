@@ -3,7 +3,7 @@
 
 2. Extensions Visual Studio Code:
     - Live Server
-    - Live Previews
+    - Live Example:
     - HTML to CSS autocompletion
     - Prettier - Code formatter
     - Auto Rename Tag 
@@ -45,10 +45,10 @@ git clone
 
 ---
 
-# Learn-The-Basics-Of-Front-End
+# **Learn-The-Basics-Of-Front-End**
 - Chúng ta sẽ bắt đầu bằng HTML trước, sau đó sẽ tới CSS và JAVASCRIPT.
 
-## Introduction
+# Introduction
 ### Front-End là gì?
 - Là thứ người dùng có thể nhìn thấy trên web.
     #### HTML là gì?
@@ -58,14 +58,14 @@ git clone
     #### JAVASCRIPT là gì?
     - Nếu đã có ngôi nhà và đồ trang trí thì **JAVASCRIPT** là đường ống nước, đường điện.
 
-## Start
+# Start
 ### HTML có những khái niệm gì?
 1. **Tag**: là một dấu ngoặc nhọn dùng để bao quanh nội dung muốn hiển thị ví dụ: (hình ảnh, văn bản, bảng,...).
 2. **Attribute**: là một thuộc tính của các thẻ **Tag** dùng để định dạng cho các thẻ **Tag** ví dụ: (màu sắc, kích thước,...).
 3. **Element**: là một phần tử của một file HTML, nó được tạo từ các thẻ **Tag** và **Attribute**.
 4. **Document**: là một trang web, nó có thể chứa nhiều **Element**.
 
-### Cấu tạo cơ bản file HTML?
+## **Cấu tạo cơ bản file HTML?**
 - Gồm các thẻ như sau:
 <table width="100%">
     <tr>
@@ -90,18 +90,53 @@ git clone
     </tr>
 </table>
 
-### Thẻ head chứ thẻ gì trong đó?
+#### Example:
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+</body>
+
+</html>
+```
+
+## *Thẻ Head chứ thẻ gì trong đó?*
 - Nó dùng để chứa các thẻ như meta, title, link
-#### Meta có cộng dụng gì?
+
+#### Example:
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+```
+
+### Meta có cộng dụng gì?
 - Meta có công dụng cung cấp thông tin về trang web cho công cụ tìm kiếm như viewports, keywords, author, description,..
 
 - Một số thẻ đã bị google bỏ qua và trở thành thẻ vô dụng:
-    1. keywords: vì quá nhiều người lạm dụng nhồi nhét quá nhiều từ khóa làm trang web mất đi sự đang tin cậy
-    2. author thẻ này cũng không cần thiết
+    - keywords: vì quá nhiều người lạm dụng nhồi nhét quá nhiều từ khóa làm trang web mất đi sự đang tin cậy
+    - author thẻ này cũng không cần thiết
 
-### Thẻ body chứ thẻ gì trong đó?
+#### Example:
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Hentai, Biến thái, súc vật, bệnh hoạn">
+<meta name="description" content="Bán tượng nami khỏa thân">
+<meta name="author" content="Không ai cả">
+```
+
+## *Thẻ body chứ thẻ gì trong đó?*
 - Vì body chứa các nội dung của trang web cho nên nó có rất là nhiều thẻ:
-#### Heading, Comment, Spacing:
+### Heading, Comment, Spacing:
 <table width="100%">
     <tr>
         <td>h1</td>
@@ -137,9 +172,33 @@ git clone
     </tr>
 </table>
 
-___
+#### Example:
+```html
+<h2>This is h2 text</h2>
+<h3>This is h3 text</h3>
+<h4>This is h4 text</h4>
+<h5>This is h5 text</h5>
+<h6>This is h6 text</h6>
+<p>This is p text</p>
 
-#### Text formatting:
+<h2>Latinh</h2>
+<p>
+    &nbsp;&nbsp;
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi qui, omnis id sunt nobis sit cumque nulla,
+    eligendi
+    adipisci, aperiam dolores voluptatum ratione suscipit? Beatae repellat architecto ducimus blanditiis maiores.
+</p>
+
+<h2>English</h2>
+<p>
+    &nbsp;&nbsp;&nbsp;
+    The company itself is a very successful company. It will never be a just consequence to assume the softness of his
+    flattery; Wherefore, because it is an exercise, it is bound for us to avoid any.
+</p>
+```
+- - -
+
+### Text formatting:
 <table width="100%">
     <tr>
         <th>Tab</th>
@@ -187,9 +246,23 @@ ___
     </tr>
 </table>
 
-___
+#### Example:
+```html
+<h2>This is normal text</h2>
+<h2>This is <b>bold</b> text</h2>
+<h2>This is <i>italic</i> text</h2>
+<h2>This is <sub>subscript</sub> text</h2>
+<h2>This is <sup>superscript</sup> text</h2>
+<h2>This is <small>small</small> text</h2>
+<h2>This is <big>big</big> text</h2>
+<h2>This is <ins>inserted</ins> text</h2>
+<h2>This is <del>deleted</del> text</h2>
+<h2>This is <mark>marked</mark> text</h2>
+```
 
-#### Link & images:
+- - -
+
+### Link & images:
 <table width="100%">
     <tr>
         <th>Tab</th>
@@ -205,9 +278,19 @@ ___
     </tr>
 </table>
 
-___
+#### Example:
+```html
+<a href="https://www.example.com" target="_blank">Here is the link</a>
 
-#### Lists
+<img 
+src="https://www.example.com" 
+alt="This is an example and it works when the image fails"
+>
+```
+
+- - -
+
+### Lists
 <table width="100%">
     <tr>
         <th>Tab</th>
@@ -226,7 +309,7 @@ ___
         <td>Dùng để viết thành danh sách</td>
     </tr>
     <tr>
-        <td>dt</td>
+        <td>dl</td>
         <td>Dùng để viết danh sách thông tin</td>
     </tr>
     <tr>
@@ -238,9 +321,35 @@ ___
     </tr>
 </table>
 
-___ 
+#### Example:
+```html
+<ul>
+    <li>This is the list</li>
+    <li>This is the list</li>
+    <li>This is the list</li>
+</ul>
 
-#### Table:
+<ol>
+    <li>This is the list</li>
+    <li>This is the list</li>
+    <li>This is the list</li>
+</ol>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Add structure to webpage</dd>
+
+    <dt>CSS</dt>
+    <dd>Add style to webpage</dd>
+
+    <dt>JAVASCRIPT</dt>
+    <dd>Add functionality to webpage</dd>
+</dl>
+```
+
+- - - 
+
+### Table:
 
 <table width="100%">
     <tr>
@@ -265,9 +374,31 @@ ___
     </tr>
 </table>
 
-___
+#### Example:
+```html
+<table border="2px">
+    <tr>
+        <th width="70px">Top</th>
+        <th>Hentai Name</th>
+    </tr>
+    <tr>
+        <td align="center">1</td>
+        <td>Shooting sperm into the beautiful and lustful sister's pussy</td>
+    </tr>
+    <tr>
+        <td align="center">2</td>
+        <td>Fucking her beautiful, seductive cousin</td>
+    </tr>
+    <tr>
+        <td align="center">3</td>
+        <td>Orgy with beautiful and delicious sisters</td>
+    </tr>
+</table>
+```
 
-#### Audio:
+- - -
+
+### Audio:
 <table width="100%">
     <tr>
         <th>Tab</th>
@@ -283,9 +414,14 @@ ___
     </tr>
 </table>
 
-___
+#### Example:
+```html
+<audio src="tieng-ren-cua-em-ho.mp3" controls muted loop autoplay></audio>
+```
 
-#### Video:
+- - -
+
+### Video:
 <table width="100%">
     <tr>
         <th>Tab</th>
@@ -301,9 +437,68 @@ ___
     </tr>
 </table>
 
-#### Button:
-#### Label:
-#### Input:
-#### Select:
-#### Option:
+#### Example:
+```html
+<video src="bo-me-di-vang-phai-o-nha-cung-em-ho.mp4" controls muted autoplay loop></video>
+```
+
+- - -
+
+### Button:
+
+#### Example:
+```html
+<button onclick="doSomeThing()">Click me!</button>
+```
+
+- - -
+
+### Label:
+
+#### Example:
+```html
+<label for="id-name"></label>
+```
+
+- - -
+
+### Input:
+
+#### Example:
+```html
+<input type="text" id="myInputText">
+<input type="email" id="myInputEmail" required>
+<input type="tel" id="myInputtel" required>
+<input type="password" id="myInputpassword" required>
+<input type="checkbox" id="myInputcheckbox" required>
+<input type="date" id="myInputdate">
+<input type="number" id="number" min="1" max="99" value="1">
+<input type="range" id="myInputrange">
+<input type="file" id="myInputfile">
+<input type="reset" id="myInputText">
+<input type="submit" id="myInputText">
+```
+
+- - -
+
+### Select:
+
+#### Example:
+```html
+<select name="Hentai" id="hentai-list">
+    <option value="TOP-10">Amakano</option>
+    <option value="TOP-9">Tamashii Insert</option>
+    <option value="TOP-8">Kyonyuu Hitozuma Onna Kyoushi Saimin</option>
+    <option value="TOP-7">Baka Dakedo Chinchin Shaburu no dake wa Jouzu na Chii-chan♡</option>
+    <option value="TOP-6">Tsumamigui 3 the Animation (Wife Eater 3)</option>
+    <option value="TOP-5">Dropout</option>
+    <option value="TOP-4">Amakano</option>
+    <option value="TOP-3">Pretty x Cation the Animation</option>
+    <option value="TOP-2">Shoujo Ramune</option>
+    <option value="TOP-1">Yokosou! Sukebe Elf no Mori e</option>
+</select>
+```
+
+- - -
+
 
