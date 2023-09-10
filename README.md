@@ -510,7 +510,9 @@ alt="This is an example and it works when the image fails"
     - Nó không có ý nghĩa gì cho nên thường dùng để đánh dấu văn bản
 #### Example:
 ```html
-
+<p>
+    Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit.
+</p>
 ```
 
 - - -
@@ -519,9 +521,26 @@ alt="This is an example and it works when the image fails"
     - Nó có tính chất block cho nên sẽ dùng rất nhiều
 #### Example:
 ```html
+<div class="form login-box">
+    <form action="">
+        <div class="input-box">
+            <label for="FullName">FullName</label>
+            <input type="text" id="FullName" name="FullName">
+            <span class="icon"></span>
+        </div>
 
+        <div class="input-box">
+            <label for="Email">Email</label>
+            <input type="email" id="Email" name="Email">
+            <span class="icon"></span>
+        </div>
+    </form>
+</div>
 ```
 
 - - -
+
+
+## *Class & Id?*
 
 ## Như vậy là đã xong phần HTML, tiếp theo chúng ta sẽ tới phần CSS nó cũng rất đơn giản thôi.
