@@ -3,7 +3,7 @@
 
 2. Extensions Visual Studio Code:
     - Live Server
-    - Live Example:
+    - Live Previews:
     - HTML to CSS autocompletion
     - Prettier - Code formatter
     - Auto Rename Tag 
