@@ -49,7 +49,7 @@ git clone
 - Chúng ta sẽ bắt đầu bằng HTML trước, sau đó sẽ tới CSS và JAVASCRIPT.
 
 # Introduction
-### Front-End là gì?
+## *Front-End là gì?*
 - Là thứ người dùng có thể nhìn thấy trên web.
     #### HTML là gì?
     - Là ngôn ngữ đánh dấu siêu văn bản cực vip max pro, là ngôi nhà mới xây.
@@ -59,7 +59,7 @@ git clone
     - Nếu đã có ngôi nhà và đồ trang trí thì **JAVASCRIPT** là đường ống nước, đường điện.
 
 # Start
-### HTML có những khái niệm gì?
+## *HTML có những khái niệm gì?*
 1. **Tag**: là một dấu ngoặc nhọn dùng để bao quanh nội dung muốn hiển thị ví dụ: (hình ảnh, văn bản, bảng,...).
 2. **Attribute**: là một thuộc tính của các thẻ **Tag** dùng để định dạng cho các thẻ **Tag** ví dụ: (màu sắc, kích thước,...).
 3. **Element**: là một phần tử của một file HTML, nó được tạo từ các thẻ **Tag** và **Attribute**.
@@ -78,7 +78,7 @@ git clone
     </tr>
     <tr>
         <td>html</td>
-        <td>Là thẻ gốc cảu các thẻ khác</td>
+        <td>Là thẻ gốc của các thẻ khác</td>
     </tr>
     <tr>
         <td>head</td>
@@ -199,9 +199,10 @@ git clone
 - - -
 
 ### Text formatting:
+    - Định dạng văn bản
 <table width="100%">
     <tr>
-        <th>Tab</th>
+        <th>Tag</th>
         <th>Description</th>
     </tr>
     <tr>
@@ -263,9 +264,10 @@ git clone
 - - -
 
 ### Link & images:
+    - Cách link và link ảnh
 <table width="100%">
     <tr>
-        <th>Tab</th>
+        <th>Tag</th>
         <th>Description</th>
     </tr>
     <tr>
@@ -291,9 +293,10 @@ alt="This is an example and it works when the image fails"
 - - -
 
 ### Lists
+    - Tạo một danh sách
 <table width="100%">
     <tr>
-        <th>Tab</th>
+        <th>Tag</th>
         <th>Description</th>
     </tr>
     <tr>
@@ -350,10 +353,10 @@ alt="This is an example and it works when the image fails"
 - - - 
 
 ### Table:
-
+    - Tạo một cái bảng
 <table width="100%">
     <tr>
-        <th>Tab</th>
+        <th>Tag</th>
         <th>Description</th>
     </tr>
     <tr>
@@ -399,9 +402,10 @@ alt="This is an example and it works when the image fails"
 - - -
 
 ### Audio:
+    - Link tới âm thanh
 <table width="100%">
     <tr>
-        <th>Tab</th>
+        <th>Tag</th>
         <th>Description</th>
     </tr>
     <tr>
@@ -422,9 +426,10 @@ alt="This is an example and it works when the image fails"
 - - -
 
 ### Video:
+    - Link tới video
 <table width="100%">
     <tr>
-        <th>Tab</th>
+        <th>Tag</th>
         <th>Description</th>
     </tr>
     <tr>
@@ -445,7 +450,7 @@ alt="This is an example and it works when the image fails"
 - - -
 
 ### Button:
-
+    - Tạo nút nhấn
 #### Example:
 ```html
 <button onclick="doSomeThing()">Click me!</button>
@@ -454,7 +459,7 @@ alt="This is an example and it works when the image fails"
 - - -
 
 ### Label:
-
+    - Dùng để gắn nhãn thường đi chung với input
 #### Example:
 ```html
 <label for="id-name"></label>
@@ -463,7 +468,7 @@ alt="This is an example and it works when the image fails"
 - - -
 
 ### Input:
-
+    - Dùng để lấy dữ liệu từ người dùng
 #### Example:
 ```html
 <input type="text" id="myInputText">
@@ -482,7 +487,7 @@ alt="This is an example and it works when the image fails"
 - - -
 
 ### Select:
-
+    - Dùng tạo danh sách chọn
 #### Example:
 ```html
 <select name="Hentai" id="hentai-list">
@@ -501,4 +506,22 @@ alt="This is an example and it works when the image fails"
 
 - - -
 
+### Span:
+    - Nó không có ý nghĩa gì cho nên thường dùng để đánh dấu văn bản
+#### Example:
+```html
 
+```
+
+- - -
+
+### Div:
+    - Nó có tính chất block cho nên sẽ dùng rất nhiều
+#### Example:
+```html
+
+```
+
+- - -
+
+## Như vậy là đã xong phần HTML, tiếp theo chúng ta sẽ tới phần CSS nó cũng rất đơn giản thôi.
