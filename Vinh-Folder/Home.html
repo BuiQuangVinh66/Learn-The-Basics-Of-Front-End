@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi, en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    #img {
+        height: 500px;
+        display: block;
+    }
+
+    input {
+        width: 50%;
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <input class="search" type="text" onchange="doSomeThing()" placeholder="Hãy nhập tên crush của bạn vào đây...">
+    <select id="search-select">
+        <option value=""></option>
+    </select>
+    <img id="img">
+</body>
+<script>
+    var inputSearch = document.querySelector('.search')
+    var IMG = document.querySelector('#img')
+    var select = document.querySelector('#search-select')
+
+    listIMG = [
+        { name: "Kim Chi", img: 'https://khoinguonsangtao.vn/wp-content/uploads/2022/09/hinh-anh-gai-trung-quoc.jpg' },
+        { name: "Minh Anh", img: 'https://danviet.mediacdn.vn/2021/5/5/1-16201893641271008335156.jpg' },
+        { name: "Lê Thảo", img: 'https://kenh14cdn.com/2020/8/22/kinglnd9598526829611872906381766492784316010369959n-1597982054505221678501-1598112884396440443614.jpg' },
+        { name: "Ngọc Ánh", img: '  https://astral.vn/wp-content/uploads/2023/05/anh-gai-xinh-lo-clip-169.jpg' },
+    ]
+
+    listIMG.forEach(function (item) {
+        var option = document.createElement('option');
+        option.value = item.name;
+        option.text = item.name;
+        select.appendChild(option);
+    });
+
+    function doSomeThing() {
+        var searchImg = listIMG.find((item) => {
+            return item.name === inputSearch.value;
+        });
+
+        if (searchImg) {
+            IMG.src = searchImg.img;
+        } else {
+            IMG.src = 'https://haycafe.vn/wp-content/uploads/2022/02/Anh-gai-xinh-cap-2-3.jpg';
+        }
+    }
+</script>
+
+</html>
